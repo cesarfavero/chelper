@@ -10,35 +10,38 @@ No diretório do projeto, adicione o Package do FireBase:
 ### `yarn add firebase`
 
 As importações já foram realizadas dentro do App.
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+Faça a instalação do SASS v5.0.0
+### `yarn add node-sass@^5.0.0`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+É importante que instale a versão 5, apesar de já haver a versão 6 do SASS. 
+O React não suporta a versão 6 do SASS, então é realmente necessário realizar o comando dessa forma para instalar a versão 5.
 
-### `yarn build`
+`Por que o SASS?`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+O SASS é um "pré-processador" CSS, onde escrevemos o basicamente o CSS, tendo muita familiaridade. 
+Oferece funcionalidades a mais para que possamos trabalharmos melhor. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Saiba mais sobre [SASS](https://sass-lang.com)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Faça a instalação do Router Dom
+### `yarn add @types/react-router-dom -D`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+O React Router Dom, nos trás a possibilidade de utilizar o conceito de navegação.
+Essa navegação citada acima seria para a navegação entre páginas, ex:
+/home
+/register
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Por que instalamos utilizando Types e -D?
+O Router Dom não é um Package desenvolvido em TypeScript, por isso necessário instalar esse pacote de terceiros, onde é incluso a tipagem do pacote.
+(terceiros = comunidade);
+(-D é uma indicação a dependência de desenvolvimento)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Saiba mais sobre [React Router Dom]{https://reactrouter.com/}
+
 
 ## Saiba mais
 
