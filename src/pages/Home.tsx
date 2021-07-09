@@ -25,8 +25,6 @@ import logoDarkImg from '../assets/images/logo-dark.png'
 import { Button } from '../components/Button';
 import { useAuth } from '../hooks/useAuth';
 
-import '../hooks/imagesAll';
-
 export function Home() {
   const { user, signInWithGoogle } = useAuth()
   const history = useHistory();
