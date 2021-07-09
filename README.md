@@ -2,8 +2,9 @@
 
 Projeto inicializado com [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Packages Necessários
 
+A autenticação com o Google é realizada via FireBase [yarn add firebase](https://yarnpkg.com/package/firebase).
 In the project directory, you can run:
 
 ### `yarn start`
