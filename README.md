@@ -4,12 +4,12 @@ Projeto inicializado com [Create React App](https://github.com/facebook/create-r
 
 ## Packages Necessários
 
-A autenticação com o Google é realizada via FireBase [yarn add firebase](https://yarnpkg.com/package/firebase).
-In the project directory, you can run:
+A autenticação com o Google é realizada via [FireBase](https://yarnpkg.com/package/firebase).
+No diretório do projeto, adicione o Package do FireBase: 
 
-### `yarn start`
+### `yarn add firebase`
 
-Runs the app in the development mode.\
+As importações já foram realizadas dentro do App.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
@@ -40,8 +40,8 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Saiba mais
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Você pode tirar suas dúvidas na [Documentação do React-Native](https://create-react-app.dev/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para aprender React, veja a [Documentação React](https://reactjs.org/).
