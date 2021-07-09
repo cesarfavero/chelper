@@ -45,15 +45,42 @@ export function Home() {
         <section id="sidebar">
           <div className="inner">
             <nav>
-              <ul>
-              <li className="home"><a href="#home">Início</a></li>
-                  <span id="square" className="square-home"></span>
-                  <li className="my-courses"><a href="#my-courses">Meus Cursos</a></li>
-                  <li className="favorites"><a href="#favorites">Favoritos</a></li>
-                  <li className="test"><a href="#test">Teste</a></li>
-                  <li className="conclusion"><a href="#conclusion">Concluídos</a></li>
-                  <li className="certified"><a href="#certified">Certificados</a></li>
-                  <li className="config"><a href="#config">Configurações</a></li>
+              <ul className="menu-left">
+                <div className="square-home">
+                  <li className="home">
+                    <a href="#home">Início</a>
+                  </li>
+                </div>
+                <div className="square-home">
+                  <li className="my-courses">
+                    <a href="#my-courses">Meus Cursos</a>
+                  </li>
+                </div>
+                <div className="square-home">
+                  <li className="favorites">
+                    <a href="#favorites">Favoritos</a>
+                  </li>
+                </div>
+                <div className="square-home">
+                  <li className="test">
+                    <a href="#test">Teste</a>
+                  </li>
+                </div>
+                <div className="square-home">
+                  <li className="conclusion">
+                    <a href="#conclusion">Concluídos</a>
+                  </li>
+                </div>
+                <div className="square-home">
+                  <li className="certified">
+                    <a href="#certified">Certificados</a>
+                  </li>
+                </div>
+                <div className="square-home">
+                  <li className="config">
+                    <a href="#config">Configurações</a>
+                  </li>
+                </div>
               </ul>
               </nav>
           </div>
@@ -194,7 +221,7 @@ export function Home() {
 
       <div className="bottom-perfil">
         <img className="perfil-img" src={animationImg}/>
-        <p className="perfil-name">Equipe 3</p>
+        <p className="perfil-name">{user}</p>
         <p className="perfil-className">Fundador</p>
         <img id="perfil-spoiler" className="arrow-up-down" src={upDown}/>
       </div>

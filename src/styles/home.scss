@@ -5,8 +5,8 @@
 
 
   li {
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 2em;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
   }
 
 
@@ -45,6 +45,16 @@ a {
   text-decoration: none;
 
 }
+
+
+.menu-left {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  margin-top: 0px;
+  margin-left: -10px;
+
+}
+
 
 
 .vertical-line {
@@ -123,7 +133,6 @@ p {
 
 .button-learn-now {
   font-family: 'Inter', 'sans-serif';
-  padding-left: 20%;
   position: flex;
   align-items: center;
   color: #11142D;
@@ -245,7 +254,6 @@ background: radial-gradient(circle, rgba(250,250,250,1) 0%, rgba(207,207,207,1) 
 
 .counter {
   font-size: 14px;
-  position: absolute;
   margin-top: 3px;
   margin-left: 8px;
 }
@@ -300,6 +308,8 @@ background: radial-gradient(circle, rgba(250,250,250,1) 0%, rgba(207,207,207,1) 
   margin-top: 15px;
   background-color: #FFA2C0;
   border-radius: 22px;
+  align-items: center;
+  justify-content: center;
 }
 
 .learn-pounds {
@@ -501,13 +511,16 @@ background: radial-gradient(circle, rgba(250,250,250,1) 0%, rgba(207,207,207,1) 
 
 .square-home {
   z-index: -1;
-  position: absolute;
-  margin-top: -44px;
-  margin-left: -10px;
-  background-color: #2F3CED;
-  width: 240px;
+  background-color: #2F3CED;  
+  width: 200px;
   height: 60px;
   border-radius: 14px;
+
+  a {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 20px;
+  } 
 }
 /* FIRST TRAIL */
 .trail-p-one {
