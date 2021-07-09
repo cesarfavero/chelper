@@ -1,6 +1,6 @@
 # C-Helper - PROA (DemoDay)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto inicializado com [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
