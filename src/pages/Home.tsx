@@ -96,7 +96,7 @@ export function Home() {
       <img className="dark-logo" src={logoDarkImg} />
       <span className="line-left"/>
       
-      <div className="text-hello-1">Olá, Diogo</div>
+      <div className="text-hello-1">Olá, {user?.name}</div>
       <div className="text-hello-2">O que vai aprender hoje?</div>
 
       <div className="menu-right"> 
@@ -217,7 +217,7 @@ export function Home() {
     
 
       <div className="bottom-perfil">
-        <img className="perfil-img" src={animationImg}/>
+        <img className="perfil-img" src={user?.avatar}/>
         <p className="perfil-name">{user?.name}</p>
         <p className="perfil-class">Cargo</p>
         <img id="perfil-spoiler" className="arrow-up-down" src={upDown}/>
