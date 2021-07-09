@@ -20,7 +20,7 @@ O React não suporta a versão 6 do SASS, então é realmente necessário realiz
 
 `Por que o SASS?`
 
-O SASS é um "pré-processador" CSS, onde escrevemos o basicamente o CSS, tendo muita familiaridade. 
+O SASS é um "pré-processador" CSS, onde escrevemos basicamente o CSS, tendo muita familiaridade. 
 Oferece funcionalidades a mais para que possamos trabalharmos melhor. 
 
 Saiba mais sobre [SASS](https://sass-lang.com)
