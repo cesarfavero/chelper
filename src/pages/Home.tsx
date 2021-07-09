@@ -221,8 +221,8 @@ export function Home() {
 
       <div className="bottom-perfil">
         <img className="perfil-img" src={animationImg}/>
-        <p className="perfil-name">{user}</p>
-        <p className="perfil-className">Fundador</p>
+        <p className="perfil-name">Name</p>
+        <p className="perfil-class">Cargo</p>
         <img id="perfil-spoiler" className="arrow-up-down" src={upDown}/>
       </div>
       
