@@ -7,13 +7,12 @@ import logoDarkImg from '../assets/images/logo-dark.png'
 import '../styles/auth.scss';
 
 import { Button } from '../components/Button';
-import { useContext } from 'react';
-import { AuthContext } from '../App';
+import { useAuth } from '../hooks/useAuth';
 
 
 export function LoginPage() {
   const history = useHistory();
-  const { user, signInWithGoogle } = useContext(AuthContext)
+  const { user, signInWithGoogle } = useAuth()
 
  async function HandleHome() {
    if (!user) {

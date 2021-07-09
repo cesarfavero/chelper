@@ -1,4 +1,3 @@
-import { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import { auth, firebase } from '../services/firebase';
@@ -24,12 +23,12 @@ import logoFlatImg from '../assets/images/logo-flat.png'
 import logoDarkImg from '../assets/images/logo-dark.png'
 
 import { Button } from '../components/Button';
-import { AuthContext } from '../App';
+import { useAuth } from '../hooks/useAuth';
 
-
+import '../hooks/imagesAll';
 
 export function Home() {
-  const { user } = useContext(AuthContext);
+  const { user, signInWithGoogle } = useAuth()
   const history = useHistory();
   
 
@@ -221,7 +220,7 @@ export function Home() {
 
       <div className="bottom-perfil">
         <img className="perfil-img" src={animationImg}/>
-        <p className="perfil-name">Name</p>
+        <p className="perfil-name">{user?.name}</p>
         <p className="perfil-class">Cargo</p>
         <img id="perfil-spoiler" className="arrow-up-down" src={upDown}/>
       </div>

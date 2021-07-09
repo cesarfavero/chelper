@@ -2,7 +2,7 @@ import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 import { useContext } from 'react';
-import { AuthContext } from '../App';
+import { AuthContext } from '../contexts/AuthContext';
 
 
 import loginImage from '../assets/images/deaf-image.png'; 
@@ -13,22 +13,24 @@ import '../styles/register.scss';
 
 
 import { Button } from '../components/Button';
+import { useAuth } from '../hooks/useAuth';
 
-export function Register() {
-  const history = useHistory();
-  const { user, signInWithGoogle } = useContext(AuthContext)
+  export function Register() {
+    const history = useHistory();
+    const { user, signInWithGoogle } = useAuth()
 
- async function HandleLogin() {
-   if (!user) {
-     await signInWithGoogle()
+  async function HandleLogin() {
+    if (!user) {
+      await signInWithGoogle()
+      }
+
+        history.push('/login');
     }
 
+    function NavigateToLoginPage () {
       history.push('/login');
-  }
-
-  function NavigateToLoginPage () {
-    history.push('/login');
-  }
+    }
+  
 
 
   return (
